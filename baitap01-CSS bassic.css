@@ -1,0 +1,43 @@
+*{
+     font-family: Arial, Helvetica, sans-serif;
+     margin: 0px;
+     padding: 0px;
+     border: 0px;
+     font-size: 100%;
+}
+
+div.text h1{  
+     font-size: 40px;
+     color: orange;
+     text-align: start;
+     text-align: left;
+     text-transform: uppercase;
+     margin: 10px;
+     padding: 20px;
+}
+div.text p{
+     width: 1250px;
+     height: 20px;
+     font-size: 20px;
+     text-transform: none;
+     color: blue;
+     padding: 20px 
+     
+}
+div.text1 p{
+     width: 1250px;
+     height: 60px;
+     font-size: 20px;
+     text-transform: none;
+     color: red ;
+     padding: 20px
+}
+div.text2 p{
+     width: 1250px;
+     height: 80px;
+     font-size: 20px;
+     text-transform: none;
+     color: black;
+     background-color: yellow;
+     padding: 20px
+}
