@@ -1,0 +1,138 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+/* Set up container */
+.container {
+    
+}
+
+
+/* css cho form */
+/* css cho một form với các thông số cơ bản của form chiều cao,và hình nền, với cấu trúc cơ bản margin, padding */
+#form {
+    width: 800px;
+    padding: 15px 30px 30px;
+    background-color: aliceblue;
+    margin: 10px auto;
+}
+/* css định dang form   */
+#form >  .form__title{
+    font-size: larger; /* font-size: 2rem; tạo kiểu dịnh dạng cho text */
+}
+
+/* inline */
+/* css inline tạo một hàng các thẻ block */
+
+.row {
+    display: flex;
+    justify-content: space-between; /*tạo khoảng cách giữa các thẻ block trên một hàng */
+    gap: 1rem;
+}
+/* css cho thuộc tính các thẻ block */
+.row>.row__item {
+    gap: .5rem;
+    display: flex; /* flex-direction: column;  nối thành một hàng */
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+
+/* country */
+/* css cho các thành phần của thẻ block khi có nhiều phần tử giống nhau trong một thẻ block và có thay đổi về các chức năng của môit phần tử */
+.width_item:nth-of-type(1){
+    flex-basis: 45%;
+}
+
+/* state */
+.width_item:nth-of-type(2){
+    flex-basis: 35%;
+}
+
+/* zip */
+.width_item:nth-of-type(3){
+    flex-basis: 20%;
+}
+/* css cho thành phần checkbox trong một thẻ block */
+.input--check{
+    display:contents; /*contents: none; tạo nhiều hàng*/
+    gap: 1rem;
+}
+/* css cho thành phần radio trong một thẻ block */
+.input--radio {
+    display: contents; /*contents: none; tạo nhiều hàng*/
+    gap: 1rem;
+}
+/* css cho thẻ block row1 trong một form */
+.row1 {
+    display: flex; 
+    justify-content:left;
+    gap: 1rem;
+}
+/* css cho thẻ block row--item1 trong một block  row1 trong một form */
+.row1>.row__item1 {
+    gap: .5rem;
+    display: flex; 
+    /* flex: 1 1 auto; */
+    flex-direction: column;
+    
+}
+/* css cho thành phần input--item trong một  thẻ block row--item trong một block  row trong một form */
+.row__item  .input--item{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: #808080;
+}
+/* css cho thành phần input--item1 trong một  thẻ block row--item1 trong một block  row1 trong một form */
+.row__item1  .input--item1{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: #808080;
+}
+/* css cho các span trong một thẻ block */
+.row__item span{
+    color: #808080;
+    font-size: smaller;
+}
+
+.row__item .row_item--email{
+    display: flex;
+}
+/* css cho thành phần lá các inline span trong một thẻ block row_item--email  */
+.row_item--email > span{
+    padding: 10px 15px 5px 0px;
+    padding: 5px 10px;
+    border: 2px solid black; 
+    border-right: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+/* css cho thành phần input trong một thẻ block row_item--email */
+.row_item--email > input{
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
+
+
+
+
+/*  dùng chung css */
+/* tạo một khoảng cách giữa các thẻ block của hai hàng trong một form với khoảng cách phía dưới của các thẻ block được xác định là margin-bottom: 1rem */
+.mb-4{
+    margin-bottom: 1rem;
+}
+/* tạo button trong một form  */
+.btn{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(51, 48, 232);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}

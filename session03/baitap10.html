@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="baitap10.css">
+</head>
+<body>
+    <!--  thẻ block bọc nội dung trình bày -->
+        <div class="container">
+            <!-- thẻ form -->
+            <form id="form" action="">
+                <h3 class="form__title mb-4">Billing Address</h3>
+                <!-- thẻ row  dùng để tao nhóm thẻ theo hàn ngang-->
+<!-- nhóm thẻ block nhập tên khách hàng -->
+                <div class="row mb-4">
+                    <div class="row__item">
+                        <label for="">First Name</label>
+                        <input class="input--item" type="text" placeholder="John" >
+                        <!-- <span>Đây là chú thích</span> -->
+                    </div>
+                    <div class="row__item">
+                        <label for="">Last Name</label>
+                        
+                        <input class="input--item" type="text"  placeholder="Doe">
+                    </div>
+                </div>
+<!-- nhóm thẻ block nhập định danh và email  -->
+                <div class="row mb-4">
+                    <div class="row__item " >
+                        <label for="">User Name</label>
+                        <span class="row_item--email"><span>@</span> <input class="input--item" type="text" placeholder="username" ></span>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                        <div class="row__item">
+                            <label for="">Email(optional)</label>
+                            <input class="input--item" type="text" placeholder="you@example.com" >
+                            <!-- <span>Đây là chú thích</span> -->
+                        </div>
+                    
+                </div>
+<!-- nhóm thẻ block nhập địa chỉ khách hàng -->
+                <div class="row mb-4">
+                        <div class="row__item">
+                        <label for="">Address</label>
+                        <input class="input--item" type="text" placeholder="1234 Main St"  >
+                        <!-- <span>Đây là chú thích</span> -->
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="row__item">
+                        <label for="">Address 2 (optional)</label>
+                        <input class="input--item" type="text" placeholder="Aprtment or suite"  >
+                        <!-- <span>Đây là chú thích</span> -->
+                    </div> 
+                    
+                </div>
+<!-- nhóm thẻ block theo hàng ngang nhập country, state, zip -->
+                <div class="row mb-4">
+                    <div class="row__item width_item">
+                        <label for="">Country</label>
+                        <select class="input--item" name="" id="">
+                            <option value="">--choose country--</option>
+                        </select>
+                    </div>
+                    <div class="row__item width_item">
+                        <label for="">State</label>
+                        <!-- <input class="input--item" type="text" > -->
+                        <select class="input--item" name="" id="">
+                            <option value="">--choose state--</option>
+                        </select>
+                    </div>
+                    <div class="row__item width_item">
+                        <label for="">zip</label>
+                        <input class="input--item" type="text" placeholder="123-4567" >
+                    </div>
+                </div>
+
+<!-- nhóm thẻ block checkbox -->
+<hr class="mb-4">
+
+                <div class="input--check mb-4">
+                    <div class="checkbox mb-4">
+                                <input class="input--item" type="checkbox" >
+                                <label for="">Shipping Address is the same as Billing Address</label>
+                    </div>
+                    <div class="checkbox mb-4">
+                                <input class="input--item" type="checkbox" >
+                                <label for="">Save this information for next time</label>
+                    </div>
+                    <!-- <div class="checkbox mb-4">
+                                <input class="input--item" type="checkbox" >
+                                <label for="">User Name</label>
+                    </div>          -->
+                </div>      
+
+<hr class="mb-4">
+
+                <h3 class="form__title mb-4">Payment</h3>
+<!-- nhóm thẻ block radio chọn phuong thức thanh toán -->
+                <div class="input--radio mb-4">
+                    <div class="radio mb-4">
+                                    <input type="radio" options="radio" name="Payment" id="Payment">
+                                    <label for="">Credit Card</label>
+                    </div>
+                    <div class="radio mb-4">
+                                    <input type="radio" options="radio" name="Payment" id="Payment">
+                                    <label for="">Debit Card</label>
+                    </div>               
+                    <div class="radio mb-4">
+                                    <input type="radio" options="radio" name="Payment" id="Payment">
+                                    <label for="">PayPal</label>
+                    </div>                
+                </div>
+<!-- nhóm thẻ block nhập thống tin theo hàn ngang, nhập thông tin thẻ thanh toán -->
+                <div class="row mb-4">
+                    <div class="row__item">
+                        <label for="">Name on Card</label>
+                        <input class="input--item" type="text" placeholder="John Doe">
+                        <span>Full name as displayed on card</span>
+                    </div>
+                    <div class="row__item">
+                        <label for="">Credit Card Number</label>
+                        
+                        <input class="input--item" type="text" placeholder="1111-2222-3333-4444">
+                    </div>
+                </div>
+
+                <div class="row1 mb-4">
+                    <div class="row__item1">
+                        <label for="">Expiration</label>
+                        <input class="input--item1" type="text" placeholder="MM/YY">
+                        <!-- <span>Full name as displayed on card</span> -->
+                    </div>
+                    <div class="row__item1">
+                        <label for="">CVV</label>
+                        
+                        <input class="input--item1" type="text" placeholder="123">
+                    </div>
+                </div>
+<!-- nhóm thẻ block button, button reset. xác nhận thông tin và làm mới thống tin -->
+                <div class="row">
+                    <button class="btn">Continue to checkout</button>
+                    <button class="btn">Reset</button>  
+                </div>
+
+
+            </form>
+
+        </div>
+</body>
+</html>
