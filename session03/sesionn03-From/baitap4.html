@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <!-- <h1>[bài tập] Tạo form đăng ký survey khách hàng voi cấu trúc baitap4.PNG</h1> -->
+     <!-- <ol>
+          <li><h3>Mục tiêu</h3></li>
+          <h4>luyện tập tạo form đăng ký survey khách hàng</h4>
+          <li><h3>Mô tả</h3></li>
+          <h4>tạo from đăng ký survey khách hàng theo giao diện</h4>
+          <li><h3>Đánh giá</h3></li>
+          <h4>Để hoàn thành bài thực hành, học viên cần :<br>
+               Đửa má nguồn lên GitHub. Dán link của repository lên phần nộp bài trên hệ thống <br>
+               Dán link của repository lên phần nộp bài trên hệ thống<br>
+          </h4>
+     </ol> -->
+<!-- bài làm -->
+<form action="" method="post">
+          
+               <h2>Market Research Survey</h2><br>
+               <h3>Please take a few moments to complete this survey</h3><br>
+          <tr>
+               <th>
+                         <!-- what is your age range? -->
+                    <label for="age">what is your age range?</label><br>
+                    <!-- <input type="range" value="age" id="age"> -->
+               </th>
+          </tr>
+
+          <tr>
+               <td>
+                    <!-- <input list="age" name="age"> <br> -->
+                    <!-- <datalist id="age"> -->
+                         <!-- <option value="18-25"></option> -->
+                         <!-- <option value="26-35"></option> -->
+                         <!-- <option value="36-45"></option> -->
+                         <!-- <option value="46-55"></option> -->
+                    <!-- </datalist> -->
+                    <select name="age" id="age">
+                         <option value="18-25">18-25</option>
+                         <option value="26-35">26-35</option>    
+                         <option value="36-45">36-45</option>    
+                         <option value="46-55">46-55</option>
+                    </select>
+               </td> 
+          </tr>
+     <br>
+     <br>
+     <br>
+          <tr>
+               <th>
+                         <!-- what is your yearly income range? -->
+                    <label for="income">what is your yearly income range?</label><br>
+               </th>
+          </tr>
+          <tr>
+               <td>
+                    <!-- <input list="income" name="income"> <br> -->
+                    <!-- <datalist id="income"> -->
+                         <!-- <option value="$20-35"></option> -->
+                         <!-- <option value="$36-50"></option> -->
+                         <!-- <option value="$51-65"></option> -->
+                         <!-- <option value="$66-80"></option> -->
+                    <!-- </datalist> -->
+                    <select name="income" id="income" col="20" row="1">
+                         <option value="$20-35">$20-35</option>
+                         <option value="$36-50">$36-50</option>
+                         <option value="$51-65">$51-65</option>
+                         <option value="$66-80">$66-80</option>
+                    </select>
+               </td> 
+          </tr>
+     <br>
+     <br>
+     <br>
+          <tr>
+               <th>
+                    <!-- gender identily -->
+                    <label for="gender">gender identily</label><br>
+                    
+               </th>
+          
+          </tr>
+     <br>
+          <tr>
+               <td>
+                    <input type="radio" name="gender" value="male">male<br>
+                    <input type="radio" name="gender" value="female">female<br>
+                    <input type="radio" name="gender" value="female">Non-binary<br>
+                    <input type="radio" name="gender" value="other">other<br>
+                         <textarea name="textarea" id="textarea" cols="10" rows="1"></textarea>
+               </td> 
+          </tr>
+     <br>
+     <br>
+     <br>
+          <tr>
+               <th>
+                    <!-- which of the following product have your purchased in the last 2 months. Please check all that apply -->
+                    <label for="product">which of the following product have your purchased in the last 2 months. Please check all that apply</label>
+               </th>
+          </tr>
+     <br>
+     <br>
+          <tr>
+               <td>
+                    <input type="checkbox" name="production" id="prduction">production1 <br>
+                    <input type="checkbox" name="production" id="production">production2 <br>
+                    <input type="checkbox" name="production" id="production">production3 <br>
+               </td>
+          </tr>
+     <br>
+     <br>
+          <tr>
+               <th>
+                    <!-- how often would you use our new product? -->
+                    <label for="">how often would you use our new product?</label>
+               </th>
+          </tr>
+     <br>
+     <br>
+          <tr>
+               <td>
+                    <input type="radio" name="time" value="daily">daily<br>
+                    <input type="radio" name="time" value="weekly">week<br>
+                    <input type="radio" name="time" value="monthly">monthly<br>
+               </td> 
+          </tr>
+     <br>
+     <br>
+          <tr>
+               <th>
+                    <!-- what would you pay for the new product? -->
+                    <label for="">what would you pay for the new product?</label><br>
+     <br>
+                         <label for="price">$</label>
+                              <input type="text" name="price" id="price">
+                         <label for="currency">-</label>
+                              <input type="text" name="currency" id="currency">
+               </th>
+          </tr>
+          <pre>  dollar                - cents</pre>
+     <br>
+     <br>
+          <tr>
+               <th>
+                    <!-- what features would you like to see in the new product? -->
+                    <label for="">what features would you like to see in the new product?</label><br>
+     <br>
+                    <textarea name="textarea" id="textarea" cols="87" rows="20"></textarea>
+               </th>
+          </tr>
+     <br>
+     <br>
+     <br>
+          <tr>
+               <th>please rate your level of agreement with the following statement: </th>
+          </tr>
+     <br>
+     <br>
+          <table border="1" cellspacing="0">
+               <!-- <caption align="bottom">This is table caption</caption> -->
+               <tr>
+                    <th></th>
+                    <th>strongly disagree</th>
+                    <th>disagree</th>
+                    <th>agree</th>
+                    <th>strongly agree</th>
+               </tr>
+               <tr>
+                    <td>Our products are priced fairly</td>
+                    <td>
+                         <input type="radio" name="price" value="strongly disagree"><br>1<br>
+                         <!-- <input type="radio" name="price" value="disagree"><br>2<br> -->
+                         <!-- <input type="radio" name="price" value="agree"><br>3<br> -->
+                         <!-- <input type="radio" name="price" value="strongly agree"><br>4<br> -->
+                    </td>
+                    <td>
+                         <!-- <input type="radio" name="price" value="strongly disagree"><br>1<br> -->
+                         <input type="radio" name="price" value="disagree"><br>2<br>
+                         <!-- <input type="radio" name="price" value="agree"><br>3<br> -->
+                         <!-- <input type="radio" name="price" value="strongly agree"><br>4<br> -->
+                    </td>
+                    <td>
+                         <!-- <input type="radio" name="price" value="strongly disagree"><br>1<br> -->
+                         <!-- <input type="radio" name="price" value="disagree"><br>2<br> -->
+                         <input type="radio" name="price" value="agree"><br>3<br>
+                         <!-- <input type="radio" name="price" value="strongly agree"><br>4<br> -->
+                    </td>
+                    <td>
+                         <!-- <input type="radio" name="price" value="strongly disagree"><br>1<br> -->
+                         <!-- <input type="radio" name="price" value="disagree"><br>2<br> -->
+                         <!-- <input type="radio" name="price" value="agree"><br>3<br> -->
+                         <input type="radio" name="price" value="strongly agree"><br>4<br>
+                    </td>
+               </tr>
+               <tr>
+                    <td>Our products are high quality</td>
+               <td>
+                         <input type="radio" name="price" value="strongly disagree"><br>1<br>
+                         <!-- <input type="radio" name="price" value="disagree"><br>2<br> -->
+                         <!-- <input type="radio" name="price" value="agree"><br>3<br> -->
+                         <!-- <input type="radio" name="price" value="strongly agree"><br>4<br> -->
+                    </td>
+                    <td>
+                         <!-- <input type="radio" name="price" value="strongly disagree"><br>1<br> -->
+                         <input type="radio" name="price" value="disagree"><br>2<br>
+                         <!-- <input type="radio" name="price" value="agree"><br>3<br> -->
+                         <!-- <input type="radio" name="price" value="strongly agree"><br>4<br> -->
+                    </td>
+                    <td>
+                         <!-- <input type="radio" name="price" value="strongly disagree"><br>1<br> -->
+                         <!-- <input type="radio" name="price" value="disagree"><br>2<br> -->
+                         <input type="radio" name="price" value="agree"><br>3<br>
+                         <!-- <input type="radio" name="price" value="strongly agree"><br>4<br> -->
+                    </td>
+                    <td>
+                         <!-- <input type="radio" name="price" value="strongly disagree"><br>1<br> -->
+                         <!-- <input type="radio" name="price" value="disagree"><br>2<br> -->
+                         <!-- <input type="radio" name="price" value="agree"><br>3<br> -->
+                         <input type="radio" name="price" value="strongly agree"><br>4<br>
+                    </td>
+               </tr>
+               <tr>
+                    <td>You would recommend our product to a friend or coworker</td>
+               <td>
+                         <input type="radio" name="price" value="strongly disagree"><br>1<br>
+                         <!-- <input type="radio" name="price" value="disagree"><br>2<br> -->
+                         <!-- <input type="radio" name="price" value="agree"><br>3<br> -->
+                         <!-- <input type="radio" name="price" value="strongly agree"><br>4<br> -->
+                    </td>
+                    <td>
+                         <!-- <input type="radio" name="price" value="strongly disagree"><br>1<br> -->
+                         <input type="radio" name="price" value="disagree"><br>2<br>
+                         <!-- <input type="radio" name="price" value="agree"><br>3<br> -->
+                         <!-- <input type="radio" name="price" value="strongly agree"><br>4<br> -->
+                    </td>
+                    <td>
+                         <!-- <input type="radio" name="price" value="strongly disagree"><br>1<br> -->
+                         <!-- <input type="radio" name="price" value="disagree"><br>2<br> -->
+                         <input type="radio" name="price" value="agree"><br>3<br>
+                         <!-- <input type="radio" name="price" value="strongly agree"><br>4<br> -->
+                    </td>
+                    <td>
+                         <!-- <input type="radio" name="price" value="strongly disagree"><br>1<br> -->
+                         <!-- <input type="radio" name="price" value="disagree"><br>2<br> -->
+                         <!-- <input type="radio" name="price" value="agree"><br>3<br> -->
+                         <input type="radio" name="price" value="strongly agree"><br>4<br>
+                    </td>
+               </tr>
+          </table>
+          
+
+     <br>
+     <br>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+
+
+</form>
+
+
+</body>
+</html>

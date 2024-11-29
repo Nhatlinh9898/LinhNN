@@ -1,0 +1,420 @@
+/* reset css */
+* {
+     margin: 0px;
+     padding: 0px;
+     border: 0px;
+     font-size: 100%;
+}
+/* set up container */
+.container{
+     
+}
+
+#form {
+     width: 400px;
+     padding: 15px 30px 30px;
+     background-color: rgb(227, 235, 241);
+     margin: 10px auto;
+}
+
+
+#form >  .form__title{
+     font-size: larger;
+     
+}
+
+/* inline */
+/* .col {
+     display: flex;
+     justify-content: space-between;
+     gap: 1rem;
+} */
+.col>.col__item{
+     gap: 1rem;
+     display: flex;
+     flex: 1 1 auto;
+     flex-direction: column;
+}
+.col>.col__item1{
+     gap: 1rem;
+     display: flex;
+     flex: 1 1 auto;
+     flex-direction: column;
+}
+input{
+     width: 100%;
+     padding: 10px;
+     border-radius: 5px;
+     border-color: #808080;
+}
+.col_item .input--item{
+     width: 100%;
+     padding: 5px;
+     border-radius: 5px;
+     border-color: #808080;
+
+}
+/* tạo màu chữ cho input --item1 */
+/* .input--item1{
+     color: red;
+} */
+.col_item1 .input--item1.placeholder{
+     color: red;
+}
+.col_item .input--item1{
+     width: 100%;
+     padding: 5px;
+     border-radius: 5px;
+     border-color: #d40d0d;
+     
+}
+.col>.col__item>input{
+     border-top-left-radius: 1px;
+     border-top-right-radius: 1px;
+     border-bottom-right-radius: 1px;
+     border-bottom-left-radius: 1px;
+}
+ /* dùng cho nút nhấn  */
+button{
+     width: 100px;
+     padding: 10px;
+     background-color: rgba(15, 119, 199, 0.658);
+     color: aliceblue;
+     border: none;
+     border-radius: 5px;
+}
+
+
+
+/* dùng chung CSS */
+.mb-4{
+     margin-bottom: 1rem;
+}
+.btn{
+     width: 100px;
+     padding: 10px;
+     background-color: rgba(14, 122, 204, 0.836);
+     color: aliceblue;
+     border: none;
+     border-radius: 5px;
+}
+
+
+
+
+/* vẽ hình tròn  */
+
+.circle{
+     width: 100px;
+     height: 100px;
+     padding: 10px;
+     background-color: rgba(15, 119, 199, 0.658);
+     color: rgb(219, 35, 84);
+     border: none;
+     border-radius: 50%;
+}
+/* tạo chuyển động cho ball */
+     .stage {
+
+     background: #eaeaed;
+
+     border-radius: 6px;
+
+     height: 150px;
+
+     position: relative;
+
+     min-width: 538px;
+
+     }
+
+     .ball {
+
+     background: #2db34a;
+
+     border-radius: 50%;
+
+     height: 50px;
+
+     position: absolute;
+
+     width: 50px;
+
+     }
+
+.stage:hover .ball {
+
+     animation: slide 2s linear;
+
+}
+.stage:hover .ball {
+
+     animation: slide 2s linear;
+
+}
+     @keyframes slide {
+
+     0% {
+
+     left: 0;
+
+     top: 0;
+
+     }
+
+     50% {
+
+     left: 244px;
+
+     top: 100px;
+
+     }
+
+     100% {
+
+     left: 488px;
+
+     top: 0;
+
+     }
+
+     }
+
+     .stage {
+
+     background: #eaeaed;
+
+     border-radius: 6px;
+
+     height: 150px;
+
+     position: relative;
+
+     min-width: 538px;
+
+     }
+
+     .stage:hover .ball {
+
+     animation: slide 2s linear;
+
+     }
+
+     .ball {
+
+     background: #2db34a;
+
+     border-radius: 50%;
+
+     height: 50px;
+
+     position: absolute;
+
+     width: 50px;
+
+     }
+
+/* tạo hành động hover hiển thị các thuộc tính */
+
+.stage1{
+
+     width: 100px;
+     height: 100px;
+     background-color: red;
+     transition: 20width 2s, height 202s, transform 202s;
+}
+.stage1:hover{
+     width: 300px;
+     height: 300px;
+     transform: rotate(360deg);
+}
+.stage1:hover{
+     width: 100px;
+     height: 100px;
+     background-color: red;
+     transition: width 202s, height 202s, transform 202s;
+}
+.stage1:hover{
+     width: 300px;
+     height: 300px;
+     transform: rotate(360deg);
+     margin-left: 100px;
+     margin-top: 100px;
+     background-color: green;
+     border-radius: 25%;
+     margin-bottom: 1000px;
+     margin-right: 1000px;
+     border: 1px solid black;
+     background-color: red;
+     background-position-x: center;
+     background-position-y: center;
+     background-size: cover;
+     background-attachment: fixed;
+     background-origin: content-box;
+     background-clip: border-box;
+     background-repeat: repeat-x;
+}
+
+/* tạo form chữ thay đổi mầu chữ khi con trỏ chỉ vào */
+#form1{
+     width: 300px;
+     height: 300px;
+     background-color: red;
+     /* margin-top: 10px  */
+     margin-bottom: 1000px;
+     margin-right: 1000px;
+     border: 1px solid black;
+     background-color: red;
+     background-position-x: center;
+     background-position-y: center;
+     background-size: cover;
+     background-attachment: fixed;
+     background-origin: content-box;
+     background-clip: border-box;
+     background-repeat: repeat-x;
+}
+.form1{
+width: 600px;
+     height: 300px;
+     background-color: red;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          margin-right:auto;
+          margin-left: auto;
+     border: 1px solid black;
+     background-color: rgba(255, 0, 0, 0.24);
+     background-position-x: center;
+     background-position-y: center;
+     background-size: cover;
+     background-attachment: fixed;
+     background-origin: content-box;
+     background-clip: border-box;
+     background-repeat: repeat-x;
+
+
+}
+.form1 .form__item{
+     margin-top: 20px;
+     margin-bottom: 10px;
+     margin-right:auto;
+     margin-left: auto;
+     border: 1px solid black;
+     background-color: rgba(255, 0, 0, 0.24);
+     background-position-x: center;
+     background-position-y: center;
+     background-size: cover;
+     background-attachment: fixed;
+     background-origin: content-box;
+     background-clip: border-box;
+     background-repeat: repeat-x;
+     font-size: 30px;
+     text-align: center;
+     text-transform: uppercase;
+}
+.form__item> p:hover {
+     color: red;
+     text-align: center;
+     text-transform: uppercase;
+     font-size: 30px;
+     background-color: rgba(76, 0, 255, 0.959);
+     background-position-x: center;
+     background-position-y: center;
+     background-size: cover;
+     background-attachment: fixed;
+     background-origin: content-box;
+     background-clip: border-box;
+     background-repeat: repeat-x;
+}
+#form2{
+     width:1000px;
+     height: 1000px;
+     background-color: red;
+     margin-top: 10px;
+     margin-bottom: 1000px;
+     margin-right: 1000px;
+     border: 1px solid black;
+     background-color: red;
+     background-position-x: center;
+     background-position-y: center;
+     background-size: cover;
+     background-attachment: fixed;
+     background-origin: content-box;
+     background-clip: border-box;
+     background-repeat: repeat-x;
+}
+.container{
+     width: 500px;
+     height: 500px;
+     background-color: red;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     margin-right:auto;
+     margin-left: auto;
+     border: 1px solid black;
+     background-color: rgba(255, 0, 0, 0.24);
+     background-position-x: center;
+     background-position-y: center;
+     background-size: cover;
+     background-attachment: fixed;
+     background-origin: content-box;
+     background-clip: border-box;
+     background-repeat: repeat-x;
+     box-shadow: 10px 0 10px rgba(0, 0, 0, 0.5);
+     border-radius: 5px;
+     overflow: hidden;
+}
+img{
+     width: 500px;
+     height: 500px;
+     background-color: red;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     margin-right:auto;
+     margin-left: auto;
+     border: 1px solid black;
+     background-color: rgba(255, 0, 0, 0.24);
+     background-position-x: center;
+     background-position-y: center;
+     background-size: cover;
+     background-attachment: fixed;
+     background-origin: content-box;
+     background-clip: border-box;
+     background-repeat: repeat-x;
+     box-shadow: 10px 0 10px rgba(0, 0, 0, 0.5);
+     border-radius: 5px;
+     overflow: hidden;
+     display: block;
+}
+.img{
+     width: 600px;
+     height: 800px;
+     background-color: red;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     margin-right:auto;
+     margin-left: auto;
+     border: 1px solid black;
+     background-color: rgba(255, 0, 0, 0.24);
+     background-position-x: center;
+     background-position-y: center;
+     background-size: cover;
+     background-attachment: fixed;
+     background-origin: content-box;
+     background-clip: border-box;
+     background-repeat: repeat-x;
+     box-shadow: 10px 0 10px rgba(0, 0, 0, 0.5);
+     border-radius: 5px;
+     overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+

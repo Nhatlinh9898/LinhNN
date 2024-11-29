@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <!-- cách tạo form -->
+<!--  
+     action: địa chỉ của sẻver mà dữ liệu được gửi tới 
+     method: phương thức / cách thức : get, post, put, delete, patch, head, connect, options, trace
+     entype: kiểu dữ liệu/định dạng của dữ liệu
+     name
+     id
+     placeholder: gợi í cho người dùng nhập dữ liệu
+     size
+     type
+     required  
+     pattern   
+     value
+     min
+     max
+     step
+     autofocus
+     disabled
+     + get : thông tin bị lộ trên đường dẫn 
+     + post : thêm thống đường dẫn với dữ liệu thông tin không hiển thị trên đường dẫn (vì được gửi vào phần body của 1 yêu cầu)
+
+-->
+     <form action="https://www.google.co.jp" method="get">
+<!-- định nghĩa các thông tin  -->
+          <label for="username">username</label>
+<!-- khi sử dụng thuộc tính for của thẻ label + id trong thẻ input thì khi nhán với thẻ input nó sẽ thay đổi thẻ label thì sẽ focus / tập trung vào ô input để nhập  -->
+          <input type="text" placeholder="username" name="username" id="username" required>
+          <!-- <input type="text" placeholder="username" name="username" required> -->
+          <!-- <input type="password" placeholder="password" name="password" required> -->
+          <!-- <input type="submit" value="login"> -->
+          <!-- <input type="reset" value="reset"> -->
+          <!-- <input type="button" value="button"> -->
+          <!-- <input type="color" -->
+          <!-- <input type="date"> -->
+          <!-- <input type="datetime-local"> -->
+          <!-- <input type="email" placeholder="email"> -->
+          <!-- <input type="file"> -->
+          <!-- <input type="hidden"> -->
+          <!-- <input type="image"> -->
+          <!-- <input type="month"> -->
+          <!-- <input type="number"> -->
+          <!-- <input type="range"> -->
+          <!-- <input type="search"> -->
+          <!-- <input type="tel"> -->
+          <!-- <input type="time"> -->
+          <!-- <input type="url"> -->
+          <!-- <input type="week"> -->
+          <!-- <input type="checkbox"> -->
+          <!-- <input type="radio"> -->
+          <!-- <input type="range"> -->
+               <input type="radio" name="sex" id="male" value="male">
+               <input type="radio" name="sex" id="female" value="female">
+          
+          <button type="submit">login</button>
+     </form>
+
+
+
+</body>
+</html>
