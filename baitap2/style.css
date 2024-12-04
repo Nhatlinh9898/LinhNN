@@ -1,0 +1,193 @@
+/* Reset CSS  */
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-size: 105%;
+     family: Arial, Helvetica, sans-serif;
+}
+body{
+     height: 300vh;
+}
+ul>li{
+     list-style: none;
+}
+a{
+     color: black;
+     text-decoration: none;
+}
+header{
+     
+     margin:10px 15px;
+     padding: 5px 20px;
+     background-color: rgba(27, 30, 218, 0.5);
+}
+.icon-search{
+     color:red;
+     font-size: 1.5rem;
+}
+.avatar img{
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+}
+.d-flex{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+/* căn chỉnh trên một dòng  */
+}
+gap2{
+     gap: 10px;
+}
+.search{
+     position: relative;
+}
+.search>input{
+     padding: 8px 10px;
+}
+.search >label{
+     position: absolute;
+     right: 10px;
+     top: 3px;
+
+}
+a:hover {
+     font-size: larger;
+     color:orange;
+}
+
+
+/* body */
+.container{
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+}
+.card{
+     box-shadow: 3px 3px 5px 0px gray;
+     max-width: 300px;
+     border:1px solid gray;
+     margin: 10px 0px;
+     border-radius:5px
+     
+     
+}
+.card__img{
+     border:1px solid gray;
+}
+.card>.card__img  img{
+width:100%;
+}
+.card>.card__img img:hover{
+     stransform: scale(1.2);
+}
+.card_body{
+     margin: 10px;
+     padding: 5px;
+}
+.card_body > .title{
+     font-weight: bold;
+}
+.info{
+     margin: 10px;
+     padding: 5px;
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+}
+.info--item{
+     color: red;
+     list-style: none;
+
+}
+.footer {
+     margin: 10px;
+     padding: 5px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.price{
+     color:blue;
+     font-weight: bold;
+}
+.detail--btn{
+     padding:10px 10px;
+     border:1px dashed gray;
+     background-color: transparent;
+     border-radius:5px
+     
+}
+.line{
+     border-width: 0.5px solid gray;
+}
+.icon{
+     color: blue    ;
+     margin-right: 10px;
+}
+.zoom{
+     padding: 5px;
+     background-color: rgba(27, 30, 218, 0.014);
+     transform: transform .2s;
+     /* width:600px
+     height: 100%
+     margin: auto; */
+}
+.zoom:hover{
+     -ms-transform: scale(1.2); /* IE 9 */
+     -webkit-transform: scale(1.2); /* Safari 3-8 */
+     transform: scale(1.2);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {  
+*{
+     font-size: 80%;
+     }
+.card{
+     max-width: 100px;   
+}
+}
+/* Small devices (portrait tablets and large phones, 600px and up)
+*/
+@media only screen and (min-width: 600px) {
+*{
+     font-size: 85%;
+     }
+.card{
+     max-width: 150px;
+}
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+*{
+     font-size: 90%;
+     }
+.card{
+     max-width: 200px;
+}
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+*{
+     font-size: 95%;
+     }
+.card{
+     max-width: 250px;
+}
+}
+/* Extra large devices (large laptops and desktops, 1200px and up)*/
+@media only screen and (min-width: 1200px) {
+*{
+     font-size: 100%;
+     }
+.card{
+     max-width: 300px;
+}
+}
+
+
+
+
+
