@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="index.css">
+</head>
+<body>
+     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+     <div class="container">
+          <div class="row">
+               <div class="row__item">
+                    <label for="">First Name</label>
+                    <input class="input--item" type="text" placeholder="John" >
+                    <!-- <span>Đây là chú thích</span> -->
+               </div>
+               <div class="row__item">
+                    <label for="">Last Name</label>
+                    <input class="input--item" type="text"  placeholder="Doe">
+               </div>
+          </div>
+          <div class="row">
+               <div class="row__item">
+                    <label for="">User Name</label>
+                    <span class="row_item--email"><span>@</span> <input class="input--item" type="text" placeholder="username" ></span>
+               </div>
+          </div>
+          <div class="row">
+               <div class="row__item">
+                    <label for="">Email(optional)</label>
+                    <input class="input--item" type="text" placeholder="you@example.com" >
+                    <!-- <span>Đây là chú thích</span> -->
+               </div>
+          </div>
+          <div class="row">
+               <div class="row__item">
+                    <label for="">Address</label>
+                    <input class="input--item" type="text" placeholder="1234 Main St"  >
+                    <!-- <span>Đây là chú thích</span> -->
+               </div>
+          </div>
+          <div class="row">
+               <div class="row__item">
+                    <label for="">Address 2 (optional)</label>
+                    <input class="input--item" type="text" placeholder="Aprtment or suite"  >
+                    <!-- <span>Đây là chú thích</span> -->
+               </div>
+          </div>
+          <div class="row">
+               <div class="row__item">
+                    <label for="">City</label>
+                    <input class="input--item" type="text" placeholder="New York"  >
+                    <!-- <span>Đây là chú thích</span> -->
+               </div>
+          </div>
+          <div class="row">
+               <div class="row__item">
+                    <label for="">State</label>
+                    <select class="input--item" name="" id="">
+                         <option value="">--choose state--</option>
+                    </select>
+               </div>
+          </div>
+          <div class="row">
+               <div class="row__item">
+                    <label for="">Zip</label>
+                    <input class="input--item" type="text" placeholder="123-4567" >
+               </div>
+          </div>
+          <div class="row">
+               <div class="row__item">
+                    <label for="">Country</label>
+                    <select class="input--item" name="" id="">
+                         <option value="">--choose country--</option>
+                    </select>
+               </div>
+          </div>
+     </div>       
+
+     <div class="row">
+          <div class="row__item">
+               <label for="">Phone</label>
+               <input class="input--item" type="text" placeholder="123-4567" >
+          </div>
+     </div>
+     <div class="date">
+          <div class="row">
+               <div class="row__item">
+                    <label for="">Date of Birth</label>
+                    <input class="input--item" type="text" placeholder="mm/dd/yyyy" >
+               </div>
+          </div>
+     </div>    
+     <div class="box">
+          <div class="row">
+               <div class="row__item">
+                    <label for="">Gender</label>
+                    <select class="input--item" name="" id="">
+                         <option value="">--choose gender--</option>
+                    </select>
+               </div>
+          </div>
+     </div>    
+     <div class="board">
+          <div class="row">
+               <div class="row__item">
+                    <label for="">Password</label>
+                    <input class="input--item" type="password" placeholder="password" >
+               </div>
+          </div>
+          <div class="row">
+               <div class="row__item">
+                    <label for="">Confirm Password</label>
+                    <input class="input--item" type="password" placeholder="password" >
+               </div>
+          </div>
+     </div>    
+     <div class="submit">
+          <div class="row">
+               <div class="row__item">
+                    <label for="">Submit</label>
+                    <input class="input--item" type="submit" value="Submit" >
+               </div>
+          </div>
+     </div>    
+     <!-- // Hãy tạo lịch của một tháng,1 năm
+let month3 = document.getElementById("month3");
+let year3 = document.getElementById("year3");
+let calendar = document.getElementById("calendar");
+let date3 = new Date(year3.value, month3.value, 1);
+let days = ["Chuật", "Thu hai", "Thu ba", "Thu tử", "Thu làm", "Thu náy", "Thu sách"];
+let monthName = ["Tháng mô", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7", "Tháng 8", "Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12"];
+let day3 = date3.getDay();
+let dayCount = new Date(year3.value, month3.value + 1, 0).getDate();
+for (let i = 0; i < days.length; i++) {
+     let day = document.createElement("div");
+     day.classList.add("day");
+     day.innerHTML = days[i];
+     calendar.appendChild(day);
+}
+for (let i = 1; i <= dayCount; i++) {
+     let day = document.createElement("div");
+     day.classList.add("day");
+     day.innerHTML = i;
+     calendar.appendChild(day);
+} -->
+     <div id="calendar"></div>
+<!-- let board = document.getElementById("board");
+for (let i = 1; i <= 9; i++) {
+     let square = document.createElement("div");
+     square.classList.add("square");
+     board.appendChild(square);
+}
+let square = document.getElementsByClassName("square");
+for (let i = 0; i < square.length; i++) {
+     square[i].style.width = "100px";
+     square[i].style.height = "100px";
+     square[i].style.backgroundColor = "red";
+     square[i].style.display = "inline-block";
+     square[i].style.margin = "10px";
+     square[i].style.border = "1px solid black";
+     square[i].style.cursor = "pointer";
+} -->
+     <div id="board"></div>
+     <div id="square"></div>
+
+     <script src="index.js"></script>
+</body>
+</html>
