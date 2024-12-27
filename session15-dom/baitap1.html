@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+     <!-- xây dựng giao diện một nút bấm vào thì hiển thị thông báo xin chào mọi cho người dùng -->
+     <button id="btn" onclick="handleClick()">Click me</button>
+
+     <!-- Xây dựng giao diện gồm 1 nút bấm và 1 dòng chữ, khi ấn vào nút thì dòng chữ sẽ thay đổi nội dung của dòng chữ trên giao
+     diện -->
+     <h1 id="title">This text is optional</h1>
+     <button id="btn11" onclick="handleClick1()">Press to say hide text</button>
+     <!-- Xây dựng giao diện gồm 1 nút bấm và 1 dòng chữ, khi ấn vào nút thì dòng chữ sẽ thay đổi style của dòng chữ -->
+     <button id="btn11" onclick="handleClick2()">Press to say hide text 2</button>
+
+     <!-- innerText: Lấy nội dung của một phần tử, bỏ qua các thẻ HTML và các khoảng trắng thừa. -->
+     <div id="example"> Hello <span>World</span>! </div>
+
+     <!-- textContent: Lấy nội dung của một phần tử, bao gồm cả các thẻ HTML và các khoảng trắng thừa. -->
+     <div id="example"> Hello <span>World</span>! </div>
+
+     <!-- innerHTML: Lấy nội dung của một phần tử, bao gồm cả các thẻ HTML và các khoảng trắng thừa. -->
+     <div id="example"> Hello <span>World</span>! </div>
+
+
+     <script src="baitap1.js"></script>
+</body>
+
+</html>
