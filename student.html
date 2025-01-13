@@ -1,0 +1,657 @@
+<!--  trang sinh viên -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+     <meta name="author" content="AdminKit">
+     <meta name="keywords"
+          content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+
+
+     <link rel="canonical" href="https://demo-basic.adminkit.io/" />
+
+     <title>AdminKit Demo - Bootstrap 5 Admin Template</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+     <link href="../../css/app.css" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="/Project-Layout/css/student.css">
+     <link rel="stylesheet" href="/Project-Layout/css/hideForm.css">
+</head>
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Danh sách</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+</head>
+
+
+<body>
+     <!-- <script>
+          const handleLogout = () => {
+               localStorage.removeItem("userLogin")
+               location.href = "/Project-Layout/html/authentication/login.html"
+          }
+     </script> -->
+     <div class="wrapper">
+
+
+
+
+
+          <nav id="sidebar" class="sidebar js-sidebar">
+               <div class="sidebar-content js-simplebar">
+                    <a class="sidebar-brand" href="index.html">
+                         <span class="align-middle">AdminKit</span>
+                    </a>
+                    <ul class="sidebar-nav">
+                         <li class="sidebar-header">
+                              Pages
+                         </li>
+                         <li class="sidebar-item ">
+                              <a class="sidebar-link" href="#">
+                                   <i class="bi bi-inboxes"></i> <span class="align-middle"><label class="label"
+                                             data-form-id="dashboardForm">Bảng điều khiển</label></span>
+                              </a>
+                         </li>
+                         <li class="sidebar-item ">
+                              <a class="sidebar-link" href="#">
+                                   <i class="bi bi-inboxes"></i> <span class="align-middle"><label class="label"
+                                             data-form-id="CourseForm">Quản lý khóa học</label></span>
+                              </a>
+                         </li>
+                         <li class="sidebar-item ">
+                              <a class="sidebar-link" href="#">
+                                   <i class="bi bi-inboxes"></i> <span class="align-middle"><label class="label"
+                                             data-form-id="ClassForm">Quản lý lớp học</label></span>
+                              </a>
+                         </li>
+                         <li class="sidebar-item ">
+                              <a class="sidebar-link" href="#">
+                                   <i class="bi bi-inboxes"></i> <span class="align-middle"><label class="label"
+                                             data-form-id="StudentForm">Quản lý sinh viên</label></span>
+                              </a>
+                         </li>
+                         <li class="sidebar-item">
+                              <a class="sidebar-link" href="#">
+                                   <i class="bi bi-inboxes"></i> <span class="align-middle">Quản lý tài khoản</span>
+                              </a>
+                         </li>
+                    </ul>
+               </div>
+          </nav>
+
+          <div class="main">
+               <nav class="navbar navbar-expand navbar-light navbar-bg">
+                    <div class="navbar-brand d-flex start-0 ">
+                         <img src="/Project-Layout/img/logo/Logo.jpg" alt="logo" class="logo border-1 w-25 ">
+                         <br>
+                         <h6 class="fw-bold ms-2 ">Để Nông Dân Biết CODE</h6>
+                    </div>
+                    <div class="container-fluid d-flex justify-content-between align-items-center">
+                         <h2 class="text-center flex-grow-1"><b>HỆ THỐNG QUẢN LÝ SINH VIÊN RIKKEI</b></h2>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                         <ul class="navbar-nav navbar-align">
+                              <li class="nav-item dropdown">
+                                   <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#"
+                                        data-bs-toggle="dropdown">
+                                        <img src="/Project-Layout/img/logo/850.jpg"
+                                             class="avatar img-fluid rounded me-1" alt="Charles Hall" />
+                                        <span class="text-dark" id="displayName">Nhatlinh</span>
+                                   </a>
+                                   <div class="dropdown-menu dropdown-menu-end">
+                                        <a class="dropdown-item" href="#"><i class="align-middle me-1"
+                                                  data-feather="user"></i> Profile</a>
+                                        <a class="dropdown-item" href="#"><i class="align-middle me-1"
+                                                  data-feather="pie-chart"></i>
+                                             Analytics</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="index.html"><i class="align-middle me-1"
+                                                  data-feather="settings"></i> Settings &
+                                             Privacy</a>
+                                        <a class="dropdown-item" href="#"><i class="align-middle me-1"
+                                                  data-feather="help-circle"></i> Help Center</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Log out</a>
+                                   </div>
+                              </li>
+                         </ul>
+                    </div>
+               </nav>
+
+               <main class="content">
+                    <div class="container-fluid p-0">
+                         <div class="card">
+                              <div class="card-header">
+                                   <h3 class="card-title">Demo Student Table</h3>
+                                   <nav class="navbar navbar-expand-lg bg-light">
+                                        <div class="container-fluid">
+                                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                                  <!-- <a class="navbar-brand"
+                                                       href="/Project-Layout/html/admin/addCourse.html">
+                                                       <button type="button" class="btn btn-success"
+                                                            data-bs-toggle="modal" data-bs-target="#addModal">+ Add new
+                                                            Course</button> 
+                                                       </a>-->
+                                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                       data-bs-target="#exampleModal">
+                                                       Add new Course
+                                                  </button>
+                                                  <!-- <a class="navbar-brand" href="#">
+                                                       <button type="button" class="btn btn-success"
+                                                            data-bs-toggle="modal" data-bs-target="#addModal">+ Add new
+                                                            Class</button>
+                                                  </a> -->
+                                                  <!-- Button trigger modal -->
+                                                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addClass">
+                                                       Add new Class
+                                                  </button>
+                                                  <a class="navbar-brand" href="#">
+                                                       <button type="button" class="btn btn-success"
+                                                            data-bs-toggle="modal" data-bs-target="#addModal">+ Add new
+                                                            Student</button>
+                                                  </a>
+                                                  <div class="dropdown">
+                                                       <a class="btn btn-secondary dropdown-toggle" href="#"
+                                                            role="button" id="dropdownMenuLink"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            Arrange
+                                                       </a>
+
+                                                       <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                            <li><a class="dropdown-item"
+                                                                      onclick="sortStudent('year','ASC')" href="#">Tuổi
+                                                                      tăng dần</a></li>
+                                                            <li><a class="dropdown-item"
+                                                                      onclick="sortStudent('year','DESC')" href="#">Tuổi
+                                                                      giảm dần</a></li>
+                                                            <li><a class="dropdown-item"
+                                                                      onclick="sortStudent('name','ASC')" href="#">Tên
+                                                                      tăng dần</a></li>
+                                                            <li><a class="dropdown-item"
+                                                                      onclick="sortStudent('name','DESC')" href="#">Tên
+                                                                      giảm dần</a></li>
+                                                       </ul>
+                                                  </div>
+                                             </div>
+                                             <form class="d-flex gap-2" role="search">
+
+                                                  <input type="text" id="keyword" placeholder="Nhập từ khóa">
+                                                  <button class="btn btn-outline-primary">Tìm kiếm</button>
+
+                                             </form>
+                                        </div>
+
+                                   </nav>
+                              </div>
+                         </div>
+
+                         <form id="dashboardForm">
+                              <main class="content">
+                                   <div class="container-fluid">
+                                        <div class="col-10">
+                                             <div class="container-fluid mt-5">
+                                                  <div
+                                                       class="d-flex justify-content-lg-start align-items-center rounded">
+                                                       <span
+                                                            class="fw-bold bg-danger-light p-1 rounded w-auto h-max col-1">
+                                                            <i class="bi bi-cpu"></i>
+                                                       </span>
+                                                       <h3 class="mb-1 ">Thống kê tổng số khóa học</h3>
+                                                  </div>
+                                                  <table class="table table-bordered text-center">
+                                                       <thead>
+                                                            <tr>
+                                                                 <th>Tổng số khóa học</th>
+                                                                 <th>Đang chờ</th>
+                                                                 <th>Đang hoạt động</th>
+                                                                 <th>Đã kết thúc</th>
+                                                            </tr>
+                                                       </thead>
+                                                       <tbody id="courseStats">
+                                                            <!-- Dữ liệu thống kê khóa học sẽ được chèn vào đây -->
+                                                       </tbody>
+                                                  </table>
+                                                  <div
+                                                       class="d-flex  justify-content-lg-start align-items-center rounded">
+                                                       <span
+                                                            class="fw-bold bg-danger-light p-1 rounded w-auto h-max col-1">
+                                                            <i class="bi bi-cpu"></i>
+                                                       </span>
+                                                       <h3 class="mb-1 ">Thống kê lớp học</h3>
+                                                  </div>
+                                                  <table class="table table-bordered text-center">
+                                                       <thead>
+                                                            <tr>
+                                                                 <th>Tổng số lớp</th>
+                                                                 <th>Đang chờ</th>
+                                                                 <th>Đang hoạt động</th>
+                                                                 <th>Đã kết thúc</th>
+                                                            </tr>
+                                                       </thead>
+                                                       <tbody id="classStats">
+                                                            <!-- Dữ liệu thống kê lớp học sẽ được chèn vào đây -->
+                                                       </tbody>
+                                                  </table>
+                                                  <div class="d-flex  justify-content align-items-center rounded">
+                                                       <span
+                                                            class="fw-bold bg-danger-light p-1 rounded w-auto h-max col-1">
+                                                            <i class="bi bi-cpu"></i>
+                                                       </span>
+                                                       <h3 class="mb-1 ">Thống kê sinh viên</h3>
+                                                  </div>
+                                                  <table class="table table-bordered text-center">
+                                                       <thead>
+                                                            <tr>
+                                                                 <th>Tổng số sinh viên</th>
+                                                                 <th>Chờ lớp</th>
+                                                                 <th>Đang học</th>
+                                                                 <th>Bảo lưu/Đình chỉ</th>
+                                                                 <th>Tốt nghiệp</th>
+                                                            </tr>
+                                                       </thead>
+                                                       <tbody id="studentStats">
+                                                            <!-- Dữ liệu thống kê sinh viên sẽ được chèn vào đây -->
+                                                       </tbody>
+                                                  </table>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </main>
+                         </form>
+
+                         <!-- Danh sách sinh viên -->
+
+                         <div class="container mt-5">
+                              <form id="StudentForm">
+
+                                   <h2>Danh sách sinh viên</h2>
+                                   <table class="table table-bordered text-center">
+                                        <thead>
+                                             <tr>
+                                                  <th>STT</th>
+                                                  <th>ID</th>
+                                                  <th>Tên</th>
+                                                  <th>Năm</th>
+                                                  <th>Địa chỉ</th>
+                                                  <th>Email</th>
+                                                  <th>Điện thoại</th>
+                                                  <th>Giới tính</th>
+                                                  <th>Trạng thái</th>
+                                                  <th>Lớp học</th>
+                                                  <th>Khóa học</th>
+                                                  <th colspan="2">Hành động</th>
+                                             </tr>
+                                        </thead>
+                                        <tbody id="tbody">
+                                             <!-- Dữ liệu sinh viên sẽ được chèn vào đây -->
+                                        </tbody>
+                                   </table>
+                              </form>
+                              <!-- Danh sách khóa học -->
+                              <form id="CourseForm">
+
+                                   <h2>Danh sách khóa học</h2>
+                                   <table class="table table-bordered text-center">
+                                        <thead>
+                                             <tr>
+                                                  <th>STT</th>
+                                                  <th>ID</th>
+                                                  <th>Tên khóa học</th>
+                                                  <th>Thời gian (giờ)</th>
+                                                  <th>Trạng thái</th>
+                                                  <th colspan="2">Hành động</th>
+                                             </tr>
+                                        </thead>
+                                        <tbody id="tbodyCourses">
+                                             <!-- Dữ liệu khóa học sẽ được chèn vào đây -->
+                                        </tbody>
+                                   </table>
+                              </form>
+                              <!-- Danh sách lớp học -->
+                              <form id="ClassForm">
+
+                                   <h2>Danh sách lớp học</h2>
+                                   <table class="table table-bordered text-center">
+                                        <thead>
+                                             <tr>
+                                                  <th>STT</th>
+                                                  <th>ID</th>
+                                                  <th>Tên lớp học</th>
+                                                  <th>Giáo viên</th>
+                                                  <th>Mô tả</th>
+                                                  <th>Sĩ số</th>
+                                                  <th>Trạng thái</th>
+                                                  <th>Khóa học</th>
+                                                  <th colspan="2">Hành động</th>
+                                             </tr>
+                                        </thead>
+                                        <tbody id="tbodyClasses">
+                                             <!-- Dữ liệu lớp học sẽ được chèn vào đây -->
+                                        </tbody>
+                                   </table>
+                              </form>
+                         </div>
+
+
+                         <!-- search -->
+
+
+
+
+                         <div id="courseClassesTable" class="table-container">
+                              <h2>Danh sách lớp học trong khóa học</h2>
+                              <table class="table table-bordered text-center">
+                                   <thead>
+                                        <tr>
+                                             <th>STT</th>
+                                             <th>ID</th>
+                                             <th>Tên lớp học</th>
+                                             <th>Giáo viên</th>
+                                             <th>Mô tả</th>
+                                             <th>Sĩ số</th>
+                                             <th>Trạng thái</th>
+                                             <th>Khóa học</th>
+                                             <th colspan="2">Hành động</th>
+                                        </tr>
+                                   </thead>
+                                   <tbody>
+                                        <!-- Dữ liệu lớp học sẽ được chèn vào đây -->
+                                   </tbody>
+                              </table>
+                         </div>
+
+                         <div id="classStudentsTable" class="table-container">
+                              <h2>Danh sách sinh viên trong lớp học</h2>
+                              <table class="table table-bordered text-center">
+                                   <thead>
+                                        <tr>
+                                             <th>STT</th>
+                                             <th>ID</th>
+                                             <th>Tên</th>
+                                             <th>Năm</th>
+                                             <th>Địa chỉ</th>
+                                             <th>Email</th>
+                                             <th>Điện thoại</th>
+                                             <th>Giới tính</th>
+                                             <th>Trạng thái</th>
+                                             <th>Lớp học</th>
+                                             <th>Khóa học</th>
+                                             <th colspan="2">Hành động</th>
+                                        </tr>
+                                   </thead>
+                                   <tbody>
+                                        <!-- Dữ liệu sinh viên sẽ được chèn vào đây -->
+                                   </tbody>
+                              </table>
+                         </div>
+
+                         <div id="studentInfoTable" class="table-container">
+                              <h2>Thông tin sinh viên</h2>
+                              <table class="table table-bordered text-center">
+                                   <thead>
+                                        <tr>
+                                             <th>STT</th>
+                                             <th>ID</th>
+                                             <th>Tên sinh viên</th>
+                                             <th>Năm</th>
+                                             <th>Địa chỉ</th>
+                                             <th>Email</th>
+                                             <th>Điện thoại</th>
+                                             <th>Giới tính</th>
+                                             <th>Trạng thái</th>
+                                             <th>Khóa học</th>
+                                             <th>Lớp học</th>
+                                             <th>Hành động</th>
+                                        </tr>
+                                   </thead>
+                                   <tbody>
+                                        <!-- Thông tin sinh viên sẽ được chèn vào đây -->
+                                   </tbody>
+                              </table>
+                         </div>
+
+                         <!-- Phần chuyển trang -->
+                         <!-- <table>
+          </table> -->
+                         <!-- <nav aria-label="Page navigation example ">
+               <ul class="pagination float-end mx-4">
+                    <li class="page-item disabled">
+                         <a class="page-link">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                         <a class="page-link" href="#">Next</a>
+                    </li>
+               </ul>
+          </nav> -->
+                         <!-- Phần chuyển trang -->
+                         <!-- <nav aria-label="Page navigation example"> -->
+                         <!-- <ul class="pagination float-end mx-4" id="paginationStudent"> -->
+                         <!-- Pagination items for students will be dynamically inserted here -->
+                         <!-- </ul> -->
+                         <!-- <ul class="pagination float-end mx-4" id="paginationClass" style="display: none;"> -->
+                         <!-- Pagination items for classes will be dynamically inserted here -->
+                         <!-- </ul> -->
+                         <!-- <ul class="pagination float-end mx-4" id="paginationCourse" style="display: none;"> -->
+                         <!-- Pagination items for courses will be dynamically inserted here -->
+                         <!-- </ul> -->
+                         <!-- </nav> -->
+
+                         <!-- <div id="formStudent" style="display: block;"> -->
+                         <!-- Student form content -->
+                         <!-- <table> -->
+                         <!-- <tbody id="tbodyStudent"></tbody> -->
+                         <!-- </table> -->
+                         <!-- <nav aria-label="Page navigation example"> -->
+                         <!-- <ul class="pagination float-end mx-4" id="paginationStudent"></ul> -->
+                         <!-- </nav> -->
+                         <!-- </div> -->
+
+                         <!-- <div id="formClass" style="display: none;"> -->
+                         <!-- Class form content -->
+                         <!-- <table> -->
+                         <!-- <tbody id="tbodyClass"></tbody> -->
+                         <!-- </table> -->
+                         <!-- <nav aria-label="Page navigation example"> -->
+                         <!-- <ul class="pagination float-end mx-4" id="paginationClass"></ul> -->
+                         <!-- </nav> -->
+                         <!-- </div> -->
+
+                         <!-- <div id="formCourse" style="display: none;"> -->
+                         <!-- Course form content -->
+                         <!-- <table> -->
+                         <!-- <tbody id="tbodyCourse"></tbody> -->
+                         <!-- </table> -->
+                         <!-- <nav aria-label="Page navigation example"> -->
+                         <!-- <ul class="pagination float-end mx-4" id="paginationCourse"></ul> -->
+                         <!-- </nav> -->
+                         <!-- </div> -->
+                         <div id="formStudent" style="display: block;">
+                              <!-- Student form content -->
+                              <table>
+                                   <tbody id="tbodyStudent"></tbody>
+                              </table>
+                              <nav aria-label="Page navigation example">
+                                   <ul class="pagination float-end mx-4" id="paginationStudent"></ul>
+                              </nav>
+                         </div>
+
+                         <div id="formClass" style="display: none;">
+                              <!-- Class form content -->
+                              <table>
+                                   <tbody id="tbodyClass"></tbody>
+                              </table>
+                              <nav aria-label="Page navigation example">
+                                   <ul class="pagination float-end mx-4" id="paginationClass"></ul>
+                              </nav>
+                         </div>
+
+                         <div id="formCourse" style="display: none;">
+                              <!-- Course form content -->
+                              <table>
+                                   <tbody id="tbodyCourse"></tbody>
+                              </table>
+                              <nav aria-label="Page navigation example">
+                                   <ul class="pagination float-end mx-4" id="paginationCourse"></ul>
+                              </nav>
+                         </div>
+
+
+               </main>
+          </div>
+     </div>
+
+
+
+     <!-- Modal add course -->
+     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+               <div class="modal-content">
+                    <div class="modal-header">
+                         <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                         <div class="mb-3">
+                              <label for="formGroupExampleInput" class="form-label">ID</label>
+                              <input type="text" class="form-control" id="formGroupExampleInput"
+                                   placeholder="Example input placeholder">
+                         </div>
+                         <div class="mb-3">
+                              <label for="formGroupExampleInput2" class="form-label">Tên khóa học</label>
+                              <input type="text" class="form-control" id="formGroupExampleInput2"
+                                   placeholder="Another input placeholder">
+                         </div>
+                         <div class="mb-3">
+                              <label for="formGroupExampleInput3" class="form-label">Thời gian(giờ)</label>
+                              <input type="text" class="form-control" id="formGroupExampleInput3"
+                                   placeholder="Another input placeholder">
+                         </div>
+                         <div class="input-group mb-3">
+                              <label class="input-group-text" for="inputGroupSelect01">Trạng thái</label>
+                              <select class="form-select" id="inputGroupSelect01">
+                                   <option selected>Choose...</option>
+                                   <option value="Đang chờ">Đang chờ</option>
+                                   <option value="Đang hoạt động">Đang hoạt động</option>
+                                   <option value="Đã kết thúc">Đã kết thúc</option>
+                              </select>
+                         </div>
+                    </div>
+                    <div class="modal-footer">
+                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                         <button type="button" class="btn btn-primary">Add Course</button>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+
+    
+     
+     <!-- Modal Add Class -->
+     <div class="modal fade" id="addClass" tabindex="-1" aria-labelledby="addClassLabel" aria-hidden="true">
+          <div class="modal-dialog">
+               <div class="modal-content">
+                    <div class="modal-header">
+                         <h1 class="modal-title fs-5" id="addClassLabel">Modal title</h1>
+                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                         <div class="mb-3">
+                              <label for="formGroupAddClassInput" class="form-label">ID</label>
+                              <input type="text" class="form-control" id="formGroupAddClassInput"
+                                   placeholder="AddClass input placeholder">
+                         </div>
+                         <div class="mb-3">
+                              <label for="formGroupAddClassInput2" class="form-label">Tên lớp học</label>
+                              <input type="text" class="form-control" id="formGroupAddClassInput2"
+                                   placeholder="Another input placeholder">
+                         </div>
+                         <div class="mb-3">
+                              <label for="formGroupAddClassInput2" class="form-label">Giáo viên</label>
+                              <input type="text" class="form-control" id="formGroupAddClassInput2"
+                                   placeholder="Another input placeholder">
+                         </div>
+                         <div class="mb-3">
+                              <label for="formGroupAddClassInput2" class="form-label">Lịch học</label>
+                              <input type="text" class="form-control" id="formGroupAddClassInput2"
+                                   placeholder="Another input placeholder">
+                         </div>
+                         <div class="mb-3">
+                              <label for="formGroupAddClassInput2" class="form-label">Phòng học</label>
+                              <input type="text" class="form-control" id="formGroupAddClassInput2"
+                                   placeholder="Another input placeholder">
+                         </div>
+                         <div class="input-group mb-3">
+                              <label class="input-group-text" for="inputGroupSelect01">Trạng thái</label>
+                              <select class="form-select" id="inputGroupSelect01">
+                                   <option selected>Choose...</option>
+                                   <option value="Đang chờ">Đang chờ</option>
+                                   <option value="Đang hoạt động">Đang hoạt động</option>
+                                   <option value="Đã kết thúc">Đã kết thúc</option>
+                              </select>
+                         </div>
+                    </div>
+                    <div class="modal-footer">
+                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                         <button type="button" class="btn btn-primary">Add Class</button>
+                    </div>
+               </div>
+          </div>
+     </div>
+     
+     <footer class="footer">
+          <div class="container-fluid">
+               <div class="row text-muted">
+                    <div class="col-12 text-start">
+                         <footer><cite title="Source Title">Coppyright Rikkei Academy</cite> @ 2023</footer>
+                    </div>
+               </div>
+          </div>
+     </footer>
+     </div>
+     </div>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+          integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+          </script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+          integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+          </script>
+
+     <!-- <script src="path/to/your/javascript/file.js"></script> -->
+
+     <!--Đây là dữ liệu sinh viên-->
+     <!-- <script src="/Project-Layout/javascript/search.js"></script> -->
+     <!-- <script src="/Project-Layout/javascript/search1.js"></script> -->
+     <!-- <script src="/Project-Layout/javascript/search2.js"></script> -->
+     <!-- <script src="/Project-Layout/javascript/search3.js"></script> -->
+     <!-- <script src="/Project-Layout/javascript/search4.js"></script> -->
+     <!-- <script src="/Project-Layout/javascript/search5.js"></script> -->
+     <script src="/Project-Layout/javascript/search6.js"></script>
+     <script src="/Project-Layout/javascript/dashboard.js"></script>
+     <script src="/Project-Layout/javascript/student.js"></script>
+     <script src="/Project-Layout/javascript/hideForm.js"></script>
+     <script src="/Project-Layout/javascript/paginationStudentList.js"></script>
+     <script src="/Project-Layout/javascript/addCourse.js"></script>
+     <script src="/Project-Layout/javascript/addClass.js"></script>
+
+
+
+</body>
+
+
+</html>
